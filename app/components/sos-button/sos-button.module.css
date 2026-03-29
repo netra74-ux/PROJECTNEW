@@ -1,0 +1,127 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+}
+
+.ring1,
+.ring2,
+.ring3 {
+  position: absolute;
+  border-radius: var(--radius-full);
+  border: 3px solid var(--color-primary);
+  width: 200px;
+  height: 200px;
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  pointer-events: none;
+}
+
+.ring2 {
+  animation-delay: 0.6s;
+  width: 200px;
+  height: 200px;
+}
+
+.ring3 {
+  animation-delay: 1.2s;
+  border-color: var(--color-primary-light);
+}
+
+.button {
+  width: 200px;
+  height: 200px;
+  border-radius: var(--radius-full);
+  background: radial-gradient(circle at 35% 35%, var(--color-primary-light), var(--color-primary), var(--color-primary-dark));
+  box-shadow: var(--shadow-sos);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.button:hover {
+  transform: scale(1.04);
+}
+
+.button:active {
+  transform: scale(0.96);
+}
+
+.button.active {
+  animation: sos-pulse 1.5s ease-in-out infinite;
+}
+
+.button.countdown {
+  background: radial-gradient(circle at 35% 35%, #ff9500, #ff6b00, #cc4400);
+  box-shadow: 0 0 60px rgba(255, 107, 0, 0.5), 0 0 120px rgba(255, 107, 0, 0.25);
+}
+
+.button.cancelling {
+  background: radial-gradient(circle at 35% 35%, #00c851, #009940, #006f2d);
+  box-shadow: var(--shadow-success);
+  animation: none;
+}
+
+.icon {
+  color: #fff;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.label {
+  font-family: var(--family-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.15em;
+  line-height: 1;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.countdownNum {
+  font-family: var(--family-display);
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  animation: blink 1s step-end infinite;
+}
+
+.sublabel {
+  font-size: var(--text-xs);
+  color: rgba(255,255,255,0.75);
+  font-weight: 500;
+  text-align: center;
+}
+
+.timer {
+  font-family: var(--family-mono);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  letter-spacing: 0.08em;
+}
+
+.countdownBar {
+  width: 200px;
+  height: 4px;
+  background: var(--color-surface);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-top: var(--space-sm);
+}
+
+.countdownFill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff9500, #ff6b00);
+  border-radius: var(--radius-full);
+  transition: width 1s linear;
+}

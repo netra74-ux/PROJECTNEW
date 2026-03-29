@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  /* Colors */
+  --color-primary: #ff1a1a;
+  --color-primary-dark: #cc0000;
+  --color-primary-light: #ff4d4d;
+  --color-primary-glow: rgba(255, 26, 26, 0.35);
+  --color-primary-muted: rgba(255, 26, 26, 0.12);
+
+  --color-secondary: #ff6b00;
+  --color-accent: #ffd700;
+
+  --color-danger: #ff1a1a;
+  --color-warning: #ff9500;
+  --color-success: #00c851;
+  --color-info: #0099ff;
+
+  --color-bg: #0a0a0f;
+  --color-bg-elevated: #111118;
+  --color-bg-card: #16161f;
+  --color-bg-input: #1e1e2a;
+  --color-bg-overlay: rgba(10, 10, 15, 0.85);
+
+  --color-surface: #1e1e2a;
+  --color-surface-hover: #252532;
+  --color-surface-active: #2a2a38;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-focus: rgba(255, 26, 26, 0.5);
+
+  --color-text-primary: #f0f0f5;
+  --color-text-secondary: #9090a8;
+  --color-text-muted: #5a5a70;
+  --color-text-inverse: #0a0a0f;
+
+  /* Fonts */
+  --family-display: 'Space Grotesk', sans-serif;
+  --family-body: 'Space Grotesk', sans-serif;
+  --family-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Text sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.4);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.5);
+  --shadow-sos: 0 0 60px rgba(255, 26, 26, 0.4), 0 0 120px rgba(255, 26, 26, 0.2);
+  --shadow-success: 0 0 30px rgba(0, 200, 81, 0.3);
+}
+
+.light-theme {
+  --color-bg: #f4f4f8;
+  --color-bg-elevated: #ffffff;
+  --color-bg-card: #ffffff;
+  --color-bg-input: #f0f0f5;
+  --color-bg-overlay: rgba(244, 244, 248, 0.9);
+
+  --color-surface: #ededf5;
+  --color-surface-hover: #e5e5ef;
+  --color-surface-active: #dcdce8;
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-border-focus: rgba(255, 26, 26, 0.4);
+
+  --color-text-primary: #0d0d14;
+  --color-text-secondary: #55556a;
+  --color-text-muted: #9090a5;
+  --color-text-inverse: #f0f0f5;
+
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.15);
+  --shadow-sos: 0 0 60px rgba(255, 26, 26, 0.3), 0 0 120px rgba(255, 26, 26, 0.15);
+}

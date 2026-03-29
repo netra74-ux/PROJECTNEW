@@ -1,0 +1,58 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-bg-card);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  font-weight: 500;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.online {
+  background: rgba(0, 200, 81, 0.15);
+  color: var(--color-success);
+}
+
+.offline {
+  background: rgba(255, 149, 0, 0.15);
+  color: var(--color-warning);
+}
+
+.batteryWrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-text-secondary);
+}
+
+.batteryLow {
+  color: var(--color-warning);
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+.criticalBattery {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-danger);
+  letter-spacing: 0.05em;
+  animation: blink 0.8s ease-in-out infinite;
+}
